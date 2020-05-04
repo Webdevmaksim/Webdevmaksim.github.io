@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+const cleanCSS = require('gulp-clean-css');
 
 gulp.task('hello', function(done){
  console.log(' Привет, мир !');
@@ -16,7 +17,7 @@ gulp.task('browser-sync', function() {
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
-let cleanCSS = require('gulp-clean-css');
+
 // Task to minify css using package cleanCSs
 gulp.task('minify-css', () => {
      // Folder with files to minify
