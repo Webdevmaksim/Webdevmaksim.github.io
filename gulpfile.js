@@ -18,7 +18,7 @@ gulp.task('browser-sync', function() {
 // Task to minify css using package cleanCSs
 gulp.task('minify-css', () => {
      // Folder with files to minify
-     return gulp.src(['./css/*.css', '!./css/grid.min.css', '!./css/style.min.css'])
+     return gulp.src(['./css/*.css', '!./css/*.min.css'])
      //The method pipe() allow you to chain multiple tasks together 
      //I execute the task to minify the files
      .pipe(rename({
