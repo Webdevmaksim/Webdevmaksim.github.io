@@ -1,3 +1,3 @@
 # repair-design
 Сайт коспании по ремонту квартир 
-https://github.com/Webdevmaksim/repair-design
+https://webdevmaksim.github.io/repair-design/.
