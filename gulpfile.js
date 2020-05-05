@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
 gulp.task('hello', function(done){
  console.log(' Привет, мир !');
@@ -24,7 +25,10 @@ gulp.task('minify-css', () => {
      return gulp.src('./css/*.css')
      //The method pipe() allow you to chain multiple tasks together 
      //I execute the task to minify the files
+     .pipe(rename({
+        suffix: '.min'
+    }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(gulp.dest('css-min'));
+    .pipe(gulp.dest('css'));
 });
