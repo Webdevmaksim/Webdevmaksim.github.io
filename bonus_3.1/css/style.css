@@ -52,18 +52,18 @@
     height: 100%;
 }
 .button{
-    padding: 8px 24px;
+    padding: 16px 36px;
     outline: none;
     text-transform: uppercase;
     font-weight: bold;
 }
-.button__extra{
+.button--extra{
     color: #66CC66;
     background-color: transparent;
     border: 2px solid #66CC66;
     margin-right: 9px; 
 }
-.button__order{
+.button--order{
     background-color: #66cc66;
     border: 2px solid #66CC66;
     color: #ffffff;
