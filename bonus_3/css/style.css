@@ -2,26 +2,22 @@
 *{
     box-sizing: border-box;
 }
-.white-stripe{
-    min-height: 50px;
-    width: 100%;
-    background-color: #ffffff;
-}
 
 .body{
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
+    margin-top: 50px;
 }
 .section{
     background-color: #276A0A;
-    background-image: url('../img/main-bg.png');
 }
 
 .products{
     min-height: 821px;
     padding-top: 30px;
     padding-bottom: 80px;
+    background-image: url('../img/main-bg.png');
 }
 .products__header{
     margin-bottom: 89px;
@@ -49,6 +45,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 15px;
+    box-shadow: 0px 14px 21px 0px rgba(0, 0, 0, 0.17);  
 }
 .products__card{
     margin-right: 30px;
@@ -100,6 +97,10 @@
     border-radius: 8px;
     transition: .5s;
     outline: none;
+    background-image: -moz-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.04);
 }
 .card__button{
     text-transform: uppercase;
@@ -111,6 +112,8 @@
     cursor: pointer;
 }
 .extra-services{
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 110px;
     padding-bottom: 120px;
 }
