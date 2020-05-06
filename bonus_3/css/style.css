@@ -1,0 +1,133 @@
+@import "./grid.css";
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.section{
+    background-color: #276A0A;
+    background-image: url('../img/main-bg.png');
+}
+
+.products{
+    min-height: 821px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.products__header{
+    margin-bottom: 89px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+.header__title{
+    margin-bottom: 49px;
+    font-size: 36px;
+}
+.items{
+    display: flex;
+    
+}
+.card{
+    min-height: 661px;
+    width: 401px;
+    background-color: #ffffff;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-height: 170px;
+    margin-bottom: 10px;
+}
+.card__img{
+    width: 302px;
+    height: 201px;
+    margin-bottom: 36px;
+}
+.card__img img{
+    width: 100%; 
+    height: 100%;
+}
+.card__title{
+    font-size: 19px;
+}
+.card__price{
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+.card__price--strong{
+    font-size: 22px;
+}
+.card__description{
+    margin-bottom: 10px;
+}
+.card__description::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('../img/before.png');
+    background-position: center;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+.button{
+    border: none;
+    color: #ffffff;
+    background-color: #FFB504;
+    border-radius: 8px;
+    transition: .5s;
+    outline: none;
+}
+.card__button{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 16px 60px;
+}
+.button:hover{
+    background-color: #eca600;
+    cursor: pointer;
+}
+.extra-services{
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+.extra-services__item{
+    margin-right: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.extra-services__header{
+    margin-bottom: 92px;
+}
+.extra-services__img{
+    width: 330px;
+    height: 176px;
+    margin-bottom: 36px;
+}
+.extra-services__img img{
+    width: 100%;
+    height: 100%;
+}
+.extra-services__button{
+    font-size: 16px;
+    padding: 16px 50px;
+    text-transform: uppercase;
+}
