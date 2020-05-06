@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
@@ -16,8 +16,11 @@ body{
     justify-content: center;
 }
 .blinds__header{
-    margin-top: 75px;
+    margin-top: 279px;
     margin-bottom: 75px;
+}
+.body__section{
+    padding-bottom: 501px;
 }
 .header__title{
     color: #666666;
@@ -54,13 +57,13 @@ body{
     text-transform: uppercase;
     font-weight: bold;
 }
-.button--extra{
+.button__extra{
     color: #66CC66;
     background-color: transparent;
     border: 2px solid #66CC66;
-    margin-right: 9px;
+    margin-right: 9px; 
 }
-.button--order{
+.button__order{
     background-color: #66cc66;
     border: 2px solid #66CC66;
     color: #ffffff;
