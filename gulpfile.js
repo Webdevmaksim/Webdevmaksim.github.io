@@ -22,9 +22,9 @@ function bs() {
 
 
 // Task to minify css using package cleanCSs
-gulp.task('minify-css', () => {
+    function mincss() {
      // Folder with files to minify
-     return gulp.src(['./css/*.css', '!./css/*.min.css'])
+     return src(['./css/*.css', '!./css/*.min.css'])
      //The method pipe() allow you to chain multiple tasks together 
      //I execute the task to minify the files
      .pipe(rename({
@@ -32,8 +32,8 @@ gulp.task('minify-css', () => {
     }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(gulp.dest('css'));
-});
+    .pipe(dest('css'));
+};
 
 function serveSass() {
     return src("./sass/*.sass")
