@@ -1,18 +1,24 @@
-const gulp = require('gulp');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const sass  = require('gulp-sass');
 
 
 // Static server
-gulp.task('browser-sync', function() {
+function bs() {
+    serveSass();
     browserSync.init({
         server: {
             baseDir: "./"
         }
     });
-    gulp.watch("./*.html").on('change', browserSync.reload);
-});
+    watch("./*.html").on('change', browserSync.reload);
+    watch("./js/*.js").on('change', browserSync.reload);
+    watch("./css/*.css").on('change', browserSync.reload);
+    watch("./sass/**/*.sass", serveSass);
+    watch("./php/*.php").on('change', browserSync.reload);
+};
 
 
 // Task to minify css using package cleanCSs
@@ -28,3 +34,12 @@ gulp.task('minify-css', () => {
     //I define the destination of the minified files with the method dest
     .pipe(gulp.dest('css'));
 });
+
+function serveSass() {
+    return src("./sass/*.sass")
+        .pipe(sass())
+        .pipe(dest("./css"))
+        .pipe(browserSync.stream());
+};
+
+exports.serve = bs;
