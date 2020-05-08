@@ -1,0 +1,63 @@
+
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
+
+/* open-sans */
+@font-face {
+	font-family: 'Open Sans Regular', sans-serif;
+	src:
+	url('../fonts/open-sans/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bebas Neue Regular';
+	src: 
+	url('../fonts/BebasRegular/BebasNeueRegular.woff') format('woff'),
+	url('../fonts/BebasRegular/BebasNeueRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	}
+  @font-face {
+	font-family: 'Bad Script Regular';
+	src: 
+	url('../fonts/bad-script/BadScript-Regular.woff') format('woff'),
+	url('../fonts/bad-script/BadScript-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lobster Regular';
+	src:
+	url('../fonts/lobster/Lobster.woff') format('woff'),
+	url('../fonts/lobster/Lobster.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+.open-sans{
+	font-family: 'Open Sans Regular', sans-serif;
+}
+.Bebas-regular{
+	font-family: 'Bebas Neue Regular', sans-serif;
+}
+.bad-script{
+	font-family:'Bad Script Regular', sans-serif;
+}
+.lobster{
+	font-family: 'Lobster Regular' sans-serif;
+}
+
