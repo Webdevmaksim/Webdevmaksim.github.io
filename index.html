@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 14</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -41,14 +42,16 @@
     </header>
     <main>
         <section class="hero">
+            <div class="instagram hero__instagram">
+                <a href="#" class="instagram__link">Instagram</a>
+            </div>
+            
 
-            <a href="#" class="instagram hero__instagram">Instagram</a>
+            <div class="container">
+                <div class="hero__content">
 
-            <div class="hero__content">
-
-                <div class="container">
                     <h1 class="title hero__title">
-                        Турецкий ремонт в Ростове-на-дону
+                        Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span>
                     </h1>
     
                     <p class="hero__text">
@@ -59,14 +62,17 @@
                         рассчитать стоймость
                     </button>
     
-                    <button class="button hero__button hero__button--otline">
+                    <button class="button hero__button button--outline">
                         отправть заявку
                     </button>
+
                 </div>
-                <!-- /.container -->
+                <!-- /.hero__content -->
+                
             </div>
-            <!-- /.hero__content -->
-            <a class="scroll-down" href="#">листайте вниз</a>   
+            <!-- /.container -->
+            
+            <a class="hero__scroll-down" href="#">листайте вниз</a>   
         </section>
         <!-- /.hero -->
     </main>

@@ -2,7 +2,8 @@
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Demi';
@@ -317,6 +318,7 @@ template {
   display: none; }
 
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto; }
 
@@ -328,8 +330,17 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #ffffff; }
+  .button--outline {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px; }
 
@@ -354,6 +365,63 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #131313 url("../img/hero/main-bg.jpg") no-repeat center/cover;
+  height: 100vh; }
+  .hero__instagram {
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-width: 80px;
+    height: 100%; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff; }
+  .hero__content {
+    color: #ffffff;
+    max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
+  .hero__button {
+    margin-right: 20px; }
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131313; }
+  .instagram__link {
+    color: #E3B873;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 40px; }
+  .title--primary {
+    color: #E3B873; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
-  font-family: sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
