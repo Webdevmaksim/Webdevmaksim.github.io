@@ -3,7 +3,7 @@
     position: relative
     display: flex
     flex-direction: column
-    background: $dark url('../img/hero/main-bg.jpg') no-repeat center / cover
+    background: $dark url('../img/hero/main-bg.jpg') no-repeat center cover
     height: 100vh
     &__instagram
         left: 0
@@ -25,6 +25,16 @@
         text-decoration: none
         color: $light
         font-family: 'Yeseva One', cursive;
+        &::after
+            content: ''
+            background: url('../img/hero/arrow-down.svg') no-repeat center
+            width: 30px
+            height: 30px
+            border: 2px solid $primary
+            border-radius: 50%
+            margin-left: 12px
+            
+
     &__content
         color: $light
         max-width: 670px
@@ -35,14 +45,24 @@
         margin-right: 20px
 .instagram
     display: flex
-    align-items: center
     justify-content: center
+    align-items: center
     background-color: $dark
     &__link
-        color: $primary
-        text-decoration: none
+        display: flex
+        align-items: center
         text-transform: uppercase
+        text-decoration: none
+        color: $primary
         transform: rotate(90deg)
+        line-height: 0.8
+        &::after
+            content: ''
+            width: 50px
+            height: 1px
+            background-color: $primary
+            margin-left: 8px
+
             
 .title
     margin: 0

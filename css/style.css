@@ -370,7 +370,7 @@ template {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #131313 url("../img/hero/main-bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/hero/main-bg.jpg") no-repeat center cover;
   height: 100vh; }
   .hero__instagram {
     left: 0;
@@ -392,6 +392,14 @@ template {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Yeseva One', cursive; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../img/hero/arrow-down.svg") no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
   .hero__content {
     color: #ffffff;
     max-width: 670px; }
@@ -403,14 +411,23 @@ template {
 
 .instagram {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #131313; }
   .instagram__link {
-    color: #E3B873;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
-    transform: rotate(90deg); }
+    text-decoration: none;
+    color: #E3B873;
+    transform: rotate(90deg);
+    line-height: 0.8; }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
