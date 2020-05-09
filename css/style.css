@@ -322,6 +322,13 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px; }
+
 .button {
   padding: 13px 20px;
   border: none;
@@ -454,10 +461,3 @@ template {
   font-size: 40px; }
   .title--primary {
     color: #E3B873; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
