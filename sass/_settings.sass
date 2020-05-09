@@ -10,11 +10,13 @@ body
         text-transform: uppercase
         font-family: 'Yeseva One', cursive 
         &__image
+            display: flex
+            align-items: center
+            justify-content: center
             &::before, &::after
                 content: ''
-                display: inline-block
-                vertical-align: text-top
                 width: 32px
                 height: 2px
                 background-color: $primary
+                margin: 0 10px
                 
