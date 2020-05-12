@@ -520,14 +520,15 @@ body {
     display: none; }
   .title {
     font-size: 1.64rem;
-    max-width: 85%; }
+    max-width: 70%; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
     max-width: 100%; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    max-width: 70%; }
   .hero__button {
     display: block;
     min-width: 100%;
