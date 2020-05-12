@@ -408,7 +408,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100px;
+  margin-top: -3rem;
   background: #131313 url("../img/hero/main-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
