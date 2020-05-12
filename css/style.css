@@ -512,6 +512,8 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .container {
+    max-width: 90%; }
   .contacts__phone {
     margin-right: 0;
     text-decoration: none;
@@ -537,3 +539,14 @@ body {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 320px) {
+  .hero__content {
+    max-width: 100%; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem;
+    max-width: 100%; }
+  .title {
+    font-size: 1.50rem;
+    max-width: 80%; } }
