@@ -522,7 +522,7 @@ body {
     display: none; }
   .title {
     font-size: 1.64rem;
-    max-width: 70%; }
+    max-width: 225px; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -530,7 +530,7 @@ body {
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem;
-    max-width: 70%; }
+    max-width: 295px; }
   .hero__button {
     display: block;
     min-width: 100%;
@@ -539,14 +539,3 @@ body {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
-
-@media screen and (max-width: 320px) {
-  .hero__content {
-    max-width: 100%; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem;
-    max-width: 100%; }
-  .title {
-    font-size: 1.50rem;
-    max-width: 80%; } }
