@@ -391,7 +391,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.6rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -408,7 +408,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: -3rem;
+  padding-top: 100px;
   background: #131313 url("../img/hero/main-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
@@ -494,13 +494,16 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
-    font-size: 12px; }
+    font-size: 12px;
+    padding-top: 0px; }
   .nav__item {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 80px; }
   .nav {
     display: none; }
   .hero__instagram {
