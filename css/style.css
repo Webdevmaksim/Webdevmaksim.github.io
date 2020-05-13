@@ -531,14 +531,16 @@ body {
     max-width: 100%; }
   .hero__text {
     font-size: 18px;
-    margin-bottom: 2.28rem;
+    margin-bottom: 3rem;
     max-width: 320px; }
   .hero__button {
     display: block;
     min-width: 100%;
     margin-bottom: 1.85rem; }
   .button {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .section-title__heading {
+    font-size: 1.8rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
