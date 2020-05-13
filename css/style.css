@@ -515,7 +515,7 @@ body {
   .menu {
     justify-content: space-between; }
   .container {
-    max-width: 90%; }
+    width: 90%; }
   .contacts__phone {
     margin-right: 0;
     text-decoration: none;
@@ -523,17 +523,16 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.70rem;
-    max-width: 225px; }
+    font-size: 1.90rem;
+    max-width: 250px; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
     max-width: 100%; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 18px;
     margin-bottom: 2.28rem;
-    max-width: 295px;
-    line-height: 1.8; }
+    max-width: 320px; }
   .hero__button {
     display: block;
     min-width: 100%;
