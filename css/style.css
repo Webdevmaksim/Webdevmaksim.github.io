@@ -556,6 +556,18 @@ img {
   color: #ffffff;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
+.card__item {
+  list-style: none; }
+  .card__item::before {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    margin-top: -10px;
+    content: '.';
+    vertical-align: top;
+    font-size: 36px; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px;
@@ -574,6 +586,11 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 760px) {
+  .design-project__list li:nth-child(7)::after {
+    content: '...';
+    margin-left: 0.5rem; }
+  .design-project__list li:nth-child(n+8) {
+    display: none; }
   .row {
     flex-direction: column;
     align-items: center; }
