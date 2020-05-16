@@ -8,13 +8,47 @@
     width: 100%
     height: 100%
     background-color: rgba($dark, 0.6)
-    color: $light
     display: flex
     justify-content: center
     align-items: center
     &__dialog
-        width: 500px
-        height: 500px
-        background: $dark
+        position: relative
+        padding: 2.357rem 3.5rem 1.928rem  
+        background: $dark url('../img/popup/bg-lines.svg') no-repeat center
+        color: $light
+        max-width: 36.36rem
+    &__close
+        position: absolute
+        margin: 0.78rem
+        right: 0
+        top: 0
+        width: 2rem
+        height: 2rem
+        border: none
+        outline: none
+        cursor: pointer
+        background: transparent url('../img/popup/close.svg') no-repeat center
+    &__title
+        font-family: 'Yeseva One', cursive
+        font-size: 1.357rem
+        max-width: 25.85rem
+        text-align: center
+        margin: 0
+        margin-bottom: 2.428rem
     &__form
-        
+        display: flex
+        flex-direction: column
+    &__input
+        margin-bottom: 3.2rem
+        min-width: 29.14rem
+        &:last-of-type
+            margin-bottom: 0.2rem
+    &__policy
+        margin-bottom: 2.7rem
+    &__button
+        align-self: flex-end
+        padding: 19px 48px
+        font-size: 14px
+
+
+    
