@@ -8,6 +8,15 @@
     background: $dark url('../img/hero/main-bg.jpg') no-repeat center / cover
     height: 100vh
     color: $light
+    &::after
+        content: ''
+        width: 100%
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 3.46rem
+        background: $dark
     &::before
         content: ''
         position: absolute
@@ -37,6 +46,7 @@
         text-decoration: none
         color: $light
         font-family: 'Yeseva One', cursive
+        z-index: 3
         &::after
             content: ''
             background: url('../img/hero/arrow-down.svg') no-repeat center

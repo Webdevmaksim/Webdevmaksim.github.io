@@ -11,11 +11,33 @@ img
 // Данная настройка позволяеет держать картинку в узде и картинка не будет вываливаться за пределы нашего родительского для картинки блока
 .section
     padding: 60px 0px
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
         text-transform: uppercase
         font-family: 'Yeseva One', cursive 
         font-size: 1rem
+        &__heading
+            line-height: 138.6%  
+        &__word
+            display: flex
+            align-items: center
+            &::after      
+                content: ''
+                width: 90px
+                height: 1px
+                background-color: $primary
+                margin-left: 2rem
+        &__text
+            font-size: 1.28rem
+            line-height: 2.07rem
+            max-width: 31.57rem
+        &--left
+            text-align: left
+        &__heading--primary
+            color: $primary
         &__subtitle
             margin: 0 auto
             max-width: 735px
