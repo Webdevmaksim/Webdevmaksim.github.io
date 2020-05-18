@@ -825,7 +825,22 @@ img {
     font-family: 'Futura Book', sans-serif;
     margin-top: 1.3rem;
     text-transform: none;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .col-40 {
+    min-width: 100%; }
+  .col-50 {
+    min-width: 100%; }
+  .swiper-slide--right {
+    min-width: 320px;
+    min-height: 250px;
+    margin-left: 2rem; }
+  .swiper-slide__text {
+    flex-basis: 38%; }
+  .section-title__text {
+    font-size: 14px; }
+  .swiper-slide--right {
+    min-width: 300px;
+    height: 202px; } }
 
 @media screen and (max-width: 570px) {
   .menu {
