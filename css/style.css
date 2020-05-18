@@ -829,6 +829,7 @@ img {
   .swiper-slide--right {
     min-height: 350px; }
   .swiper-slide__text {
+    font-size: 14px;
     flex-basis: 38%; }
   .section-title__text {
     font-size: 14px; }
@@ -863,6 +864,8 @@ img {
     margin-bottom: 1.85rem; }
   .button {
     font-size: 1.1rem; }
+  .section-title--left {
+    margin-bottom: -10px; }
   .section-title__heading {
     font-size: 1.8rem; }
   .section-title__subtitle {
@@ -874,7 +877,17 @@ img {
     font-family: 'Futura Book', sans-serif;
     margin-top: 1.3rem;
     text-transform: none;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .swiper-container--right {
+    margin-top: 30px; }
+  .swiper-slide--left {
+    margin-bottom: 40px; }
+  .swiper-slide__heading {
+    text-transform: none; }
+  .swiper-slide__text {
+    font-size: 14px;
+    text-transform: none;
+    flex-basis: 50%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

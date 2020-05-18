@@ -73,6 +73,7 @@
                 min-height: 350px
                 // margin-left: 2rem
             &__text
+                font-size: 14px
                 flex-basis: 38%
     .section-title__text
         font-size: 14px
@@ -112,6 +113,8 @@
         font-size: 1.1rem
         &--outline
     .section-title
+        &--left
+            margin-bottom: -10px
         &__heading
             font-size: 1.8rem
         &__subtitle
@@ -124,7 +127,19 @@
             margin-top: 1.3rem
             text-transform: none
             margin-bottom: 40px
-
+    .swiper
+        &-container
+            &--right
+                margin-top: 30px
+        &-slide
+            &--left
+                margin-bottom: 40px
+            &__heading
+                text-transform: none
+            &__text
+                font-size: 14px
+                text-transform: none
+                flex-basis: 50%
 
 @media screen and ( max-height: 520px )
     .hero
