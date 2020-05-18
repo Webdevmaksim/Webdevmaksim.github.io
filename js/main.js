@@ -40,6 +40,9 @@ $(document).ready(function () {
     });
     closeBtn.on('click', function(){
         modal.toggleClass('modal--visible');
+        if (event.target == modal) {
+            modal.toggleClass('modal--visible');
+        }
     });
 
      //initialize swiper when document ready
@@ -49,6 +52,7 @@ $(document).ready(function () {
         pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        spaceBetween: '100px',
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -58,9 +62,11 @@ $(document).ready(function () {
         var next = $('.swiper-button-next');
         var prev = $('.swiper-button-prev');
         var bullets = $('.swiper-pagination');
+        var bullet = $('.swiper-pagination-bullet');
         // Margin-positioning for the left arrow 
-        next.css('left', prev.width() + 10 + bullets.width() +10);
-        bullets.css('left', prev.width() + 10);
+        next.css('left', prev.width() + 10 + bullets.width() +20);
+        bullets.css('left', prev.width() + 20);
+        bullet.css('right',  bullet.width() + 200);
 
 });
 

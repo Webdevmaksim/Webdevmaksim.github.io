@@ -391,7 +391,10 @@ template {
   align-items: flex-start; }
 
 .col-30 {
-  flex-basis: 30%; }
+  width: 30%; }
+
+.col-40 {
+  width: 40%; }
 
 .col-50 {
   width: 50%; }
@@ -431,6 +434,7 @@ img {
         background-color: #E3B873;
         margin-left: 2rem; }
     .section-title__text {
+      font-family: 'Futura Book';
       font-size: 1.28rem;
       line-height: 2.07rem;
       max-width: 31.57rem; }
@@ -706,19 +710,28 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide--left {
+    margin-top: 1.1rem;
+    margin-bottom: 6rem; }
+  .swiper-slide__value {
+    display: inline-block;
+    max-width: 100px;
+    line-height: 1.4; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    flex-basis: 38%;
+    margin-bottom: 0.42rem;
+    padding-bottom: 1rem; }
   .swiper-slide__heading {
     color: #E3B873;
     font-size: 1.285rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+    margin-bottom: 0.54rem; }
 
 .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.3); }
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
@@ -742,6 +755,20 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0.1rem; }
+
+.section-title__word::after {
+  margin-left: 35px; }
+
+.section-title__heading--primary {
+  line-height: 1.5;
+  font-size: 24px; }
+
+.section-title__text {
+  text-transform: none; }
+
+.swiper-container--right {
+  top: 20px;
+  right: 20px; }
 
 @media screen and (max-width: 1300px) {
   html {
