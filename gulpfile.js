@@ -34,7 +34,7 @@ function bs() {
     }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(dest('css'));
+    .pipe(dest('../css'));
 };
 
 function serveSass() {
