@@ -79,7 +79,7 @@ $(document).ready(function () {
         var bullets = $('.swiper-pagination');
         var bullet = $('.swiper-pagination-bullet');
         // Margin-positioning for the left arrow 
-        next.css('left', prev.width() + 10 + bullets.width() +40);
+        next.css('left', prev.width() + 10 + bullets.width() +20);
         bullets.css('left', prev.width() + 20);
         // bullet.css('right',  bullet.width() + 30);
 
