@@ -770,10 +770,6 @@ img {
 .section-title__text {
   text-transform: none; }
 
-.swiper-container--right {
-  top: 20px;
-  right: 20px; }
-
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px;
@@ -831,15 +827,12 @@ img {
   .col-50 {
     min-width: 100%; }
   .swiper-slide--right {
-    min-width: 320px;
-    min-height: 250px;
-    margin-left: 2rem; }
+    min-height: 350px; }
   .swiper-slide__text {
     flex-basis: 38%; }
   .section-title__text {
     font-size: 14px; }
   .swiper-slide--right {
-    min-width: 300px;
     height: 202px; } }
 
 @media screen and (max-width: 570px) {
