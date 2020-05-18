@@ -477,8 +477,9 @@ img {
   justify-content: space-between;
   align-items: center; }
 
-.logo {
+.logo__link {
   color: #E3B873;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 1.075rem; }
 
@@ -755,6 +756,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0.1rem; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
+  margin-right: 15px; }
 
 .section-title__word::after {
   margin-left: 35px; }
