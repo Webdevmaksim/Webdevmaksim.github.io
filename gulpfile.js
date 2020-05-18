@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 // Static server
 function bs() {
+    minсss();
     serveSass();
     browserSync.init({
         server: {
@@ -24,7 +25,7 @@ function bs() {
 
 
 // Task to minify css using package cleanCSs
-    function mincss() {
+    function minсss() {
      // Folder with files to minify
      return src(['./css/*.css', '!./css/*.min.css'])
      //The method pipe() allow you to chain multiple tasks together 
@@ -34,7 +35,7 @@ function bs() {
     }))
     .pipe(cleanCSS())
     //I define the destination of the minified files with the method dest
-    .pipe(dest('../css'));
+    .pipe(dest('css'));
 };
 
 function serveSass() {
