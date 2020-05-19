@@ -784,7 +784,7 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1080px) {
   .row {
     flex-direction: column;
     align-items: center; }
@@ -798,7 +798,7 @@ img {
   .swiper-slide--right img {
     width: 100%; }
   .swiper-slide__text {
-    flex-basis: 50%; } }
+    flex-basis: 40%; } }
 
 @media screen and (max-width: 992px) {
   .hero {
