@@ -785,7 +785,11 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-slide--left {
+    margin-bottom: 40px; }
+  .swiper-slide__text {
+    flex-basis: 50%; } }
 
 @media screen and (max-width: 760px) {
   .design-project__list li:nth-child(7)::after {
@@ -827,10 +831,11 @@ img {
   .col-50 {
     min-width: 100%; }
   .swiper-slide--right {
-    min-height: 350px; }
+    min-height: 350px;
+    margin-top: 40px; }
   .swiper-slide__text {
     font-size: 14px;
-    flex-basis: 38%; }
+    flex-basis: 40%; }
   .section-title__text {
     font-size: 14px; }
   .swiper-slide--right {
