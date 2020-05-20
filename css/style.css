@@ -967,8 +967,22 @@ img {
   .swiper-slide--right {
     height: 202px; }
   .control {
+    position: relative;
     background-color: #131313;
     color: #ffffff; }
+    .control__input {
+      border-bottom: 1px solid; }
+    .control__button {
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      transform: translate(0, 50%);
+      width: 85%;
+      order: 2; }
+    .control__form {
+      flex-direction: column; }
+    .control__policy {
+      align-self: start; }
     .control__label {
       color: rgba(255, 255, 255, 0.5);
       margin-bottom: 0; }

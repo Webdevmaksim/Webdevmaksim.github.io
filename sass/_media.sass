@@ -43,6 +43,7 @@
                 margin-bottom: 40px
             &__text
                 flex-basis: 50%
+   
     
 
 @media screen and ( max-width: 760px )
@@ -117,8 +118,22 @@
     
     // Control
     .control
+        position: relative
         background-color: $dark   
         color: $light
+        &__input
+            border-bottom: 1px solid  
+        &__button
+            position: absolute
+            bottom: 0
+            margin: auto
+            transform: translate(0, 50%)
+            width: 85%
+            order: 2 
+        &__form
+            flex-direction: column
+        &__policy
+            align-self: start
         &__label
             color: rgba(255, 255, 255, 0.5)
             margin-bottom: 0
