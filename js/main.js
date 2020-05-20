@@ -34,7 +34,7 @@ $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle="modal"]'),
         closeBtn = $('.modal__close');
-        modalD = $('.modal__dialog');
+        modalD = $('.modal--visible');
 
     modalBtn.on('click', function(){
        modal.toggleClass('modal--visible');
@@ -42,6 +42,8 @@ $(document).ready(function () {
     closeBtn.on('click', function(){
         modal.toggleClass('modal--visible');
     });
+
+
 
 
      //initialize swiper when document ready
@@ -83,6 +85,20 @@ $(document).ready(function () {
         bullets.css('left', prev.width() + 20);
 
         new WOW().init();
+
+        // Валидация формы 
+        $('.modal-form').validate({
+          rules: {
+            // simple rule, converted to {required:true}
+            userName: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+            
+          }
+        });
 
 });
 

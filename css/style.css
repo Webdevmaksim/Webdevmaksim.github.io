@@ -379,6 +379,8 @@ template {
     margin-right: 0.64rem;
     border-radius: 1px;
     cursor: pointer; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -737,6 +739,9 @@ img {
   color: #ffffff;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
+.design-project {
+  padding-bottom: 30rem; }
+
 .card__item {
   list-style: none; }
   .card__item::before {
@@ -874,6 +879,53 @@ img {
 .swiper-container--right {
   top: 20px;
   right: 20px; }
+
+.footer {
+  background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
+  padding-bottom: 0; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    margin: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3.5rem; }
+    .footer__input-group:nth-child(3) {
+      flex-basis: 100%;
+      margin-bottom: 2.1rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    font-size: 1.142rem;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.285rem;
+    font-size: 1.1rem; }
+  .footer__label {
+    margin-bottom: -7px; }
+  .footer__menu {
+    background: #131313;
+    padding: 3.5rem 0; }
 
 @media screen and (max-width: 1300px) {
   html {
