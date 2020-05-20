@@ -111,6 +111,21 @@
     .swiper-slide--right
         // min-width: 300px
         height: 202px
+    
+    // Control
+    .control
+        background-color: $dark   
+        color: $light
+        &__label
+            color: rgba(255, 255, 255, 0.5)
+            margin-bottom: 0
+        &__input
+            color: $light
+            &::placeholder
+                color: $light
+        &__section-title
+
+
         
 @media screen and ( max-width: 570px )  
     .menu
@@ -171,6 +186,40 @@
                 font-size: 14px
                 text-transform: none
                 flex-basis: 50%
+    // Control
+    .control
+        position: relative
+        &__video
+            background-size: cover
+            max-width: 35rem
+            min-height: 200px
+        &__input__group
+            margin-top: -1.7rem
+            &:first-child
+                margin-bottom: 4.5rem
+        &__text
+            font-size: 1.1rem
+            font-family: 'Futura Book'
+            line-height: 170%
+            max-width: 27.50rem
+            margin-top: -1rem
+        &__input
+            border-bottom: 1px solid  
+        &__button
+            position: absolute
+            bottom: 0
+            transform: translate(0, 50%)
+            width: 90%
+            order: 2    
+        &__form
+            flex-direction: column
+            justify-content: space-between
+        &__policy
+            align-self: start
+            order: 1
+    .video__play
+        width: 6rem
+        height: 6rem
 
 @media screen and ( max-height: 520px )
     .hero
