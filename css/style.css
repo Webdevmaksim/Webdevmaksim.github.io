@@ -972,6 +972,10 @@ img {
     color: #ffffff; }
     .control__input {
       border-bottom: 1px solid; }
+    .control__input__group {
+      margin-top: -1.7rem; }
+      .control__input__group:first-child {
+        margin-bottom: 4.5rem; }
     .control__button {
       position: absolute;
       bottom: 0;
@@ -982,7 +986,8 @@ img {
     .control__form {
       flex-direction: column; }
     .control__policy {
-      align-self: start; }
+      align-self: start;
+      font-size: 1.3rem; }
     .control__label {
       color: rgba(255, 255, 255, 0.5);
       margin-bottom: 0; }

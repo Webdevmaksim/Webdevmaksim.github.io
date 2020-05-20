@@ -122,7 +122,11 @@
         background-color: $dark   
         color: $light
         &__input
-            border-bottom: 1px solid  
+            border-bottom: 1px solid 
+        &__input__group 
+            margin-top: -1.7rem
+            &:first-child
+                margin-bottom: 4.5rem 
         &__button
             position: absolute
             bottom: 0
@@ -134,6 +138,7 @@
             flex-direction: column
         &__policy
             align-self: start
+            font-size: 1.3rem
         &__label
             color: rgba(255, 255, 255, 0.5)
             margin-bottom: 0
@@ -208,10 +213,10 @@
     .control
         position: relative
         &__video
-            background-size: cover
+            background-size: cover  
             max-width: 35rem
             min-height: 200px
-        &__input__group
+        &__input__group 
             margin-top: -1.7rem
             &:first-child
                 margin-bottom: 4.5rem
