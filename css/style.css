@@ -954,11 +954,14 @@ img {
   .col-60 {
     min-width: 100%; }
   .swiper-slide--right {
-    min-height: 350px;
+    min-height: 24.28rem;
     margin-top: 40px; }
   .swiper-slide__text {
     font-size: 14px;
     flex-basis: 40%; }
+  .swiper-container--right {
+    top: 0;
+    right: 0; }
   .section-title__text {
     font-size: 14px; }
   .swiper-slide--right {
@@ -982,7 +985,7 @@ img {
       .control__input::placeholder {
         color: #ffffff; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 590px) {
   .menu {
     justify-content: space-between; }
   .container {
