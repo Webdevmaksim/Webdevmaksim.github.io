@@ -95,6 +95,7 @@ $(document).ready(function () {
               required: true,
               minlength: 2
             },
+            modalCheckbox: "required",
             userPhone: "required",
             // Правило-объект(Блок)
             userEmail: {
@@ -106,6 +107,9 @@ $(document).ready(function () {
             userName:{
               required: "Имя обязательно",
               minlength: "Имя не короче двух букв"
+            },
+            modalCheckbox:{
+              required: "Лучше согласится !!!"
             },
             userPhone: "Телефон обязателен",
             userEmail: {
