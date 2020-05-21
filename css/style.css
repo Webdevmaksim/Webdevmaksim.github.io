@@ -915,7 +915,8 @@ img {
   .footer__policy {
     flex-basis: 100%;
     font-size: 1.142rem;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.6rem;
+    margin-left: -0.9rem; }
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.285rem;
