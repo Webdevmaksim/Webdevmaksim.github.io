@@ -478,7 +478,7 @@
                 <h3 class="footer__title">Остались вопросы?</h3>
                 <!-- /.footer__title -->
                 <form action="#" class="form footer__form">
-
+                    
                     <div class="input-group footer__input-group">
                         <label for="user-name" class="label--light label form__label footer__label">Имя</label>
                         <input placeholder="Как вас зовут:" type="text" class="footer__input input form__input" id="user-name">
@@ -497,7 +497,7 @@
     
                     <div class="policy footer__policy">
                         <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
-                        <label class="policy__label policy__label--center" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
+                        <label class="policy__label policy__label--center" for="policy-checkbox">Я соглашаюсь на обработку данных</label>
                     </div>
                     <!-- /.policy -->
                     <button class="button button--primary footer__button">
@@ -551,17 +551,23 @@
 
             <form action="#" class="form modal__form">
 
-                <label for="user-name" class="label--light label form__label">Имя</label>
-                <input placeholder="Как вас зовут:" type="text" name="userName" class="modal__input input form__input" id="user-name">
-
-                <label for="user-phone" class="label--light label form__label">Телефон</label>
-                <input placeholder="Ваш номер телефона:" type="tel" name="userPhone" class="modal__input input form__input" id="user-phone">
-
-                <label for="user-email" class="label--light label form__label">Email</label>
-                <input placeholder="Ваш email" type="email" name="userEmail" class="modal__input input form__input" id="user-email">
-
+                    <div class="input-group modal__input-group">
+                        <label for="userName" class="label--light label form__label">Имя</label>
+                        <input placeholder="Как вас зовут:" type="text" name="userName" class="modal__input input form__input" id="userName">
+                    </div>
+                    <!-- /.input-group modal__input-group -->
+                    <div class="input-group modal__input-group">
+                        <label for="userPhone" class="label--light label form__label">Телефон</label>
+                        <input placeholder="Ваш номер телефона:" type="tel" name="userPhone" class="modal__input input form__input" id="userPhone">
+                    </div>
+                    <!-- /.input-group modal__input-group -->
+                    <div class="input-group modal__input-group">
+                        <label for="userEmail" class="label--light label form__label">Email</label>
+                        <input placeholder="Ваш email" type="email" name="userEmail" class="modal__input input      form__input" id="userEmail">
+                    </div>
+                    <!-- /.input-group modal__input-group -->
                 <div class="policy modal__policy">
-                    <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+                    <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="modalCheckbox" checked>
                     <label class="policy__label" for="policy-checkbox">я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
@@ -579,6 +585,7 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> 
     <script src="./js/wow.min.js"></script>  
     <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

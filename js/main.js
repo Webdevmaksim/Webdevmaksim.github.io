@@ -88,18 +88,34 @@ $(document).ready(function () {
 
         // Валидация формы 
         $('.modal__form').validate({
+          errorClass: "invalid",
           rules: {
-            // simple rule, converted to {required:true}
-            userName: "required",
-            // compound rule
+            // Строчное правило
+            userName: {
+              required: true,
+              minlength: 2
+            },
+            userPhone: "required",
+            // Правило-объект(Блок)
             userEmail: {
               required: true,
               email: true
             }
-            
+          },  //Сообщения
+          messages: {
+            userName:{
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите email",
+              email: "Ведите в формате name@domain.com"
+            }
           }
         });
-
+        // маска для телефона
+          $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 });
 
 
