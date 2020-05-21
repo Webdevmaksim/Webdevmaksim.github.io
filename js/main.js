@@ -87,7 +87,7 @@ $(document).ready(function () {
         new WOW().init();
 
         // Валидация формы 
-        $('.modal-form').validate({
+        $('.modal__form').validate({
           rules: {
             // simple rule, converted to {required:true}
             userName: "required",
