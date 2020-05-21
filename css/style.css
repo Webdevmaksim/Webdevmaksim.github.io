@@ -896,7 +896,8 @@ img {
     margin: auto;
     padding: 2.5rem;
     margin-top: -20rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.714rem;
+    background: #131313 url("../img/popup/bg-lines.svg") no-repeat center/cover; }
   .footer__title {
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
@@ -1130,6 +1131,13 @@ img {
     font-size: 14px;
     text-transform: none;
     flex-basis: 50%; }
+  .design-project {
+    background-color: #131313;
+    padding-bottom: 0; }
+    .design-project__section-title {
+      color: #ffffff; }
+    .design-project__sub-title {
+      color: #ffffff; }
   .control {
     position: relative; }
     .control__video {
@@ -1163,25 +1171,39 @@ img {
   .video__play {
     width: 6rem;
     height: 6rem; }
-  .footer__title {
-    font-size: 1.65rem;
-    margin-bottom: 4.7rem; }
-  .footer__form {
-    margin-left: -1rem; }
-  .footer__label {
-    font-size: 1.3rem; }
-  .footer__input {
-    font-size: 1.5rem; }
-  .footer__input-group {
-    font-size: 1.65rem;
-    margin-bottom: 5.4rem; }
-  .footer__policy {
-    margin-top: -1.55rem;
-    margin-left: 0.3rem;
-    font-size: 1.33rem;
-    margin-bottom: 5.4rem; }
-  .footer__button {
-    font-size: 1.3rem; } }
+  .footer {
+    background-color: #131313; }
+    .footer__wrap {
+      background-image: none; }
+    .footer__title {
+      font-size: 1.65rem;
+      margin-bottom: 4.7rem; }
+    .footer__form {
+      margin-left: -1rem; }
+    .footer__label {
+      font-size: 1.3rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+    .footer__input-group {
+      font-size: 1.65rem;
+      margin-bottom: 5.4rem; }
+    .footer__policy {
+      margin-top: -1.55rem;
+      margin-left: 0.3rem;
+      font-size: 1.33rem;
+      margin-bottom: 5.4rem; }
+    .footer__button {
+      font-size: 1.3rem; }
+  .modal__dialog {
+    padding: 1.5rem;
+    max-width: 26.85rem; }
+  .modal__title {
+    font-size: 1.2rem;
+    margin-top: 1.5rem; }
+  .modal__button {
+    align-self: center;
+    width: 100%;
+    font-size: 1rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

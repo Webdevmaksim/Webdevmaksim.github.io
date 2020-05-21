@@ -229,6 +229,15 @@
                 font-size: 14px
                 text-transform: none
                 flex-basis: 50%
+
+    .design
+        &-project   
+            background-color: $dark
+            padding-bottom: 0
+            &__section-title
+                color: $light
+            &__sub-title
+                color: $light
     // Control
     .control
         position: relative
@@ -265,6 +274,9 @@
         height: 6rem
     //Footer
     .footer
+        background-color: $dark
+        &__wrap
+            background-image: none
         &__title
             font-size: 1.65rem
             margin-bottom: 4.7rem
@@ -284,6 +296,18 @@
             margin-bottom: 5.4rem
         &__button
             font-size: 1.3rem
+    //modal
+    .modal
+        &__dialog
+            padding: 1.5rem
+            max-width: 26.85rem
+        &__title
+            font-size: 1.2rem
+            margin-top: 1.5rem
+        &__button
+            align-self: center
+            width: 100%
+            font-size: 1rem
 
 @media screen and ( max-height: 520px )
     .hero

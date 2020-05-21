@@ -118,8 +118,65 @@ $(document).ready(function () {
             }
           }
         });
+        //Footer-valid
+        $('.footer__form').validate({
+          errorClass: "invalid",
+          rules: {
+            // Строчное правило
+            footerName: {
+              required: true,
+              minlength: 2
+            },
+            footerPolicy: "required",
+            footerPhone: "required",
+            footerQuestion: "required",
+            // Правило-объект(Блок)
+            footerEmail: {
+              required: true,
+              email: true
+            }
+          },  //Сообщения
+          messages: {
+            footerName:{
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв"
+            },
+            footerPolicy:{
+              required: "Лучше согласится !!!"
+            },
+            footerPhone: "Телефон обязателен",
+            footerQuestion: {
+              required: "Обязательно задайте ваш вопрос"
+              
+            }
+          }
+        });
+        //control-form
+        $('.control__form').validate({
+          errorClass: "invalid",
+          rules: {
+            // Строчное правило
+            controlName: {
+              required: true,
+              minlength: 2
+            },
+            controlPolicy: "required",
+            controlPhone: "required",
+          },  //Сообщения
+          messages: {
+            controlName:{
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух букв"
+            },
+            controlPolicy:{
+              required: "Лучше согласится !!!"
+            },
+            controlPhone: "Телефон обязателен",
+            
+          }
+        });
         // маска для телефона
-          $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+          $('[type=tel]').mask('+7 (000) 000-00-00');
 });
 
 
