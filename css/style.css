@@ -1208,3 +1208,8 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 390px) {
+  .modal__dialog {
+    max-height: 85vh;
+    overflow: scroll; } }
