@@ -191,7 +191,7 @@ $(document).ready(function () {
                     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
                 ),
         
-                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                myPlacemark = new ymaps.Placemark([53.919200, 27.494623], {
                     hintContent: 'Glo-Academy:Repair-Design',
                     balloonContent: 'Метка для дз номер 25'
                 }, {

@@ -890,11 +890,13 @@ img {
     font-size: 1.42rem; }
   .our-clients__subtitle {
     max-width: 25.17rem; }
+  .our-clients__img-wrapper {
+    max-width: 90px;
+    min-height: 90px; }
 
 .card-header__img {
   border-radius: 50%;
-  width: 80px;
-  height: 80px; }
+  width: 100%; }
 
 .footer {
   background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
