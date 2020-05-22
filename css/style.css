@@ -937,12 +937,15 @@ img {
   .card__tag--left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-basis: 50%;
     border-right: 1px solid #ffffff; }
   .card__tag--right {
     min-height: 100%;
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
 
 .footer {
   background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
