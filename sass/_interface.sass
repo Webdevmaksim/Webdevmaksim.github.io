@@ -35,7 +35,7 @@
     &__checkbox
         opacity: 0
         visibility: hidden
-        &:checked +
+        &:checked ~
             .policy__label
                 &::before
                     background: $primary url('../img/popup/check-box.svg') no-repeat center / 0.8rem
@@ -56,7 +56,9 @@
 label
     &.invalid
         color: tomato   
-        
+        position: absolute
+        left: 0
+        bottom: -1.3rem   
 input
     &.invalid
         border-bottom: 1px solid tomato

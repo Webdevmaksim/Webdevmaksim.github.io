@@ -1,16 +1,16 @@
 .our-clients 
     padding-bottom: 30rem
     &__card-header
-        font-family: Yeseva One
+        display: flex
+        align-items: center
+        justify-content: space-between 
+    &__title
         font-size: 1.3rem
         line-height: 1.3
+        font-family: Yeseva One
+        max-width: 14rem
     &__heading
         font-size: 1.42rem
-    &__subtitle
-        max-width: 25.17rem
-    &__card-header
-        display: flex
-        justify-content: space-between
     &__text
         max-width: 23.14rem
         font-style: normal
@@ -24,12 +24,11 @@
         padding-top: 1.71rem
         padding-left: 1.42rem
         padding-right: 2.28rem
-        border: 2px solid red
+        
 
-.card-header
-    &__img
-        border-radius: 50%
-        max-width: 100px
+.card-header__img
+    border-radius: 50%
+    
 .card__tag
     display: flex
     position: absolute
@@ -44,24 +43,23 @@
     font-style: normal  
     font-weight: normal
     font-size: 17px
-    height: fit-content
+    height: fit-content 
     transform: translateY(50%)
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5)
     &--left
         display: flex
         align-items: center
         justify-content: space-around
         flex-basis: 50%
         border-right: 1px solid $light
-        // min-height: 100%
-        // padding-left: 2rem
-        // padding-top: 0.9rem  
+        height: 100%
     &--right
         min-height: 100%
         flex-basis: 50%
         display: flex
         align-items: center
         justify-content: space-around
-.card__price
+
     
         
         
