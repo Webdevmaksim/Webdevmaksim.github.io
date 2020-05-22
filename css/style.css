@@ -743,9 +743,6 @@ img {
   color: #ffffff;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
-.design-project {
-  padding-bottom: 30rem; }
-
 .card__item {
   list-style: none; }
   .card__item::before {
@@ -887,6 +884,18 @@ img {
   top: 20px;
   right: 20px; }
 
+.our-clients {
+  padding-bottom: 30rem; }
+  .our-clients__heading {
+    font-size: 1.42rem; }
+  .our-clients__subtitle {
+    max-width: 25.17rem; }
+
+.card-header__img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px; }
+
 .footer {
   background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
   padding-bottom: 0; }
@@ -935,6 +944,10 @@ img {
   .footer__menu {
     background: #131313;
     padding: 3.5rem 0; }
+  .footer__map {
+    min-height: 33.21rem;
+    max-width: 66.07rem;
+    margin: 0 auto 4.71rem; }
 
 @media screen and (max-width: 1300px) {
   html {

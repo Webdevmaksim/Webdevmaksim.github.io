@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a646dc50-3618-4090-b0cc-460076d80b0c&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -469,7 +470,39 @@
             </div>
         </section>
         <!-- /.section design-project -->
-        
+        <section class="section our-clients">
+            <div class="container">
+                <div class="section-title our-clients__section-title">
+                    <h3 class="section-title__heading our-clients__heading">Наши клиенты</h3>
+
+                    <div class="section-title__image our-clients__image">
+                        <img src="./img/our-clients/hand-shake.svg" alt="рукопожатие">
+                    </div>
+                    <div class="section-title__subtitle our-clients__subtitle">
+                        80% наших клиентов рекомендуют нас своим знакомым и друзьям
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <div class="card our-clients__card">
+                            <div class="card-header our-clients__card-header">
+                                <img src="./img/our-clients/client-1.png" alt="Клиент" class="card-header__img">
+
+                            </div>
+                        </div>
+                        <!-- /.card our-clients__card -->
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30"></div>
+                    <!-- /.col-30 -->
+                    <div class="col-30"></div>
+                    <!-- /.col-30 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section our-clients -->
 
     </main>
     <footer class="footer section section--dark">
@@ -505,6 +538,11 @@
                     </button>
                 </form>
             </div>
+
+            <div class="map footer__map" id="map">
+                
+            </div>
+            <!-- /.map footer__map -->
             
         </div>
         <div class="footer__menu">
