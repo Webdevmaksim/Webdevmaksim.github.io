@@ -383,8 +383,12 @@ template {
 label.invalid {
   color: tomato;
   position: absolute;
-  left: 0;
-  bottom: -1.3rem; }
+  bottom: -1.3rem;
+  transform: translateX(-50%);
+  left: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -678,9 +682,9 @@ img {
     color: #131313; }
 
 .control__policy {
-  flex-basis: 100%;
   margin-top: 1rem;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
 
 .control__button {
   padding: 1.28rem 4.30rem;
@@ -1167,7 +1171,9 @@ img {
     background-color: #181818; }
     .footer__wrap {
       margin-bottom: 0;
-      margin-top: 0; } }
+      margin-top: 0; }
+  .our-clients {
+    display: none; } }
 
 @media screen and (max-width: 590px) {
   .menu {
@@ -1293,7 +1299,9 @@ img {
   .modal__button {
     align-self: center;
     width: 100%;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .our-clients {
+    display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
