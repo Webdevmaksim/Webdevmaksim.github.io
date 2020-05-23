@@ -1051,6 +1051,34 @@ img {
     max-width: 66.07rem;
     margin: 0 auto 4.71rem; }
 
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.1rem;
+  margin-bottom: 2rem; }
+
+.contacts__phone {
+  text-transform: uppercase;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 1.42rem;
+  max-width: 39rem;
+  text-align: center;
+  margin-bottom: 1.6rem; }
+
+.contacts__phone-link {
+  color: #E3B873;
+  text-decoration: none; }
+
+.contacts__email {
+  margin-right: 1.15rem; }
+
+.contacts__socials {
+  margin-left: -3.3rem; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px;
@@ -1323,8 +1351,10 @@ img {
     align-self: center;
     width: 100%;
     font-size: 1rem; }
-  .our-clients {
-    display: none; } }
+  .contacts__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
