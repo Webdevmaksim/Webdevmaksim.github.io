@@ -177,6 +177,8 @@ $(document).ready(function () {
         });
         // маска для телефона
           $('[type=tel]').mask('+7 (000) 000-00-00');
+
+          
         // Яндекс Карты
           ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {

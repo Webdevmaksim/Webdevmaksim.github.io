@@ -1026,7 +1026,9 @@ img {
     background: #131313;
     padding: 3.5rem 0; }
   .footer__map {
-    min-height: 33.21rem;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    height: 33.21rem;
     max-width: 66.07rem;
     margin: 0 auto 4.71rem; }
 
