@@ -89,6 +89,7 @@ $(document).ready(function () {
         // Валидация формы 
         $('.modal__form').validate({
           errorClass: "invalid",
+          errorElement: "div",
           rules: {
             // Строчное правило
             userName: {
@@ -155,6 +156,7 @@ $(document).ready(function () {
         //control-form
         $('.control__form').validate({
           errorClass: "invalid",
+          errorElement: "div",
           rules: {
             // Строчное правило
             controlName: {
