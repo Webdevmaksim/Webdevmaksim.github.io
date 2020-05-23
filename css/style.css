@@ -401,6 +401,17 @@ div.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+div.invalid-modal {
+  position: absolute;
+  color: tomato;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+div#modalCheckbox-error {
+  top: 3.5rem; }
+
 .container {
   width: 85%;
   max-width: 1256px;

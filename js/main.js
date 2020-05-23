@@ -88,7 +88,7 @@ $(document).ready(function () {
 
         // Валидация формы 
         $('.modal__form').validate({
-          errorClass: "invalid",
+          errorClass: "invalid-modal",
           errorElement: "div",
           rules: {
             // Строчное правило
