@@ -1079,6 +1079,17 @@ img {
 .contacts__socials {
   margin-left: -3.3rem; }
 
+.contacts-map-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.footer__map {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 33.21rem;
+  max-width: 66.07rem;
+  margin: 0 auto 4.71rem; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px;
@@ -1351,10 +1362,17 @@ img {
     align-self: center;
     width: 100%;
     font-size: 1rem; }
-  .contacts__wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0; } }
+  .contacts-map-wrapper {
+    display: flex;
+    flex-direction: column-reverse; }
+  .footer__map {
+    width: 100%; }
+  .contacts__phone {
+    color: #E3B873;
+    font-size: 14px;
+    line-height: 138.6%; }
+  .contacts__socials {
+    margin: auto; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
