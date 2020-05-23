@@ -1101,6 +1101,8 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-30 {
+    margin-bottom: 5rem; }
   .col-40 {
     min-width: 50%;
     align-self: flex-start; }
@@ -1132,7 +1134,9 @@ img {
     flex-basis: auto;
     margin-left: 0; }
   .footer__button {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+  .col-30 {
+    width: 50%; } }
 
 @media screen and (max-width: 760px) {
   .design-project__list li:nth-child(7)::after {
