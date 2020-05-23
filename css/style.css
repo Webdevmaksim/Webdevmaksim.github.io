@@ -811,7 +811,7 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    min-width: 29.14rem; }
+    width: 29.14rem; }
     .modal__input-group {
       margin-bottom: 3.2rem;
       position: relative; }
@@ -1298,6 +1298,8 @@ img {
   .modal__title {
     font-size: 1.2rem;
     margin-top: 1.5rem; }
+  .modal__input {
+    max-width: 23rem; }
   .modal__button {
     align-self: center;
     width: 100%;
