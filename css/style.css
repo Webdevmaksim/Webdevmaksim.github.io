@@ -390,6 +390,14 @@ label.invalid {
   width: -moz-max-content;
   width: max-content; }
 
+div.invalid {
+  position: absolute;
+  color: tomato;
+  top: 3.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
 input.invalid {
   border-bottom: 1px solid tomato; }
 

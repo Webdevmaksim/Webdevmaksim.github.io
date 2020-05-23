@@ -121,7 +121,7 @@ $(document).ready(function () {
         //Footer-valid
         $('.footer__form').validate({
           errorClass: "invalid",
-          // errorElement: "div",
+          errorElement: "div",
           rules: {
             // Строчное правило
             footerName: {
