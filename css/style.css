@@ -1044,12 +1044,6 @@ img {
   .footer__menu {
     background: #131313;
     padding: 3.5rem 0; }
-  .footer__map {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    height: 33.21rem;
-    max-width: 66.07rem;
-    margin: 0 auto 4.71rem; }
 
 .contacts__wrapper {
   display: flex;
@@ -1058,7 +1052,7 @@ img {
   margin-left: 1.1rem;
   margin-bottom: 2rem; }
 
-.contacts__phone {
+.contacts__phone-footer {
   text-transform: uppercase;
   font-family: Yeseva One;
   font-style: normal;
@@ -1087,7 +1081,7 @@ img {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   height: 33.21rem;
-  max-width: 66.07rem;
+  width: 66.07rem;
   margin: 0 auto 4.71rem; }
 
 @media screen and (max-width: 1300px) {
@@ -1113,7 +1107,9 @@ img {
   .swiper-slide--right img {
     width: 100%; }
   .swiper-slide__text {
-    flex-basis: 40%; } }
+    flex-basis: 40%; }
+  .footer__map {
+    width: 100%; } }
 
 @media screen and (max-width: 992px) {
   .hero {
