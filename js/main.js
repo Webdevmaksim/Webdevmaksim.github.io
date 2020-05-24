@@ -39,6 +39,8 @@ $(document).ready(function () {
     modalBtn.on('click', function(){
        modal.toggleClass('modal--visible');
     });
+
+    
     closeBtn.on('click', function(){
         modal.toggleClass('modal--visible');
     });
@@ -117,6 +119,22 @@ $(document).ready(function () {
               required: "Обязательно укажите email",
               email: "Ведите в формате name@domain.com"
             }
+          },
+          submitHandler: function(form) {
+            // $(form).ajaxSubmit();
+            $.ajax({
+              type: "POST",
+              url: "./php/send.php",
+              data: $(form).serialize(),
+              success: function (response) {
+                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                $(form)[0].reset();
+                modal.removeClass('modal--visible');
+              },
+              error: function(response){
+                console.log('Ошибка запроса ' + response);
+              }
+            });
           }
         });
         //Footer-valid
@@ -151,6 +169,21 @@ $(document).ready(function () {
               required: "Обязательно задайте ваш вопрос"
               
             }
+          },
+          submitHandler: function(form) {
+            // $(form).ajaxSubmit();
+            $.ajax({
+              type: "POST",
+              url: "./php/question.php",
+              data: $(form).serialize(),
+              success: function (response) {
+                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                $(form)[0].reset();
+              },
+              error: function(response){
+                console.log('Ошибка запроса ' + response);
+              }
+            });
           }
         });
         //control-form
@@ -176,6 +209,21 @@ $(document).ready(function () {
             },
             controlPhone: "Телефон обязателен",
             
+          },
+          submitHandler: function(form) {
+            // $(form).ajaxSubmit();
+            $.ajax({
+              type: "POST",
+              url: "./php/control.php",
+              data: $(form).serialize(),
+              success: function (response) {
+                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                $(form)[0].reset();
+              },
+              error: function(response){
+                console.log('Ошибка запроса ' + response);
+              }
+            });
           }
         });
         // маска для телефона

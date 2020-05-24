@@ -32,8 +32,11 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${controlName}, его телефон: ${controlPhone}";
 
-    $mail->send();
-    header('Location: ../html-templates/thanks.html');
+    if ($mail->send()) {
+        echo"ok";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
