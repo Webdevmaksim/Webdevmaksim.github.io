@@ -1115,7 +1115,11 @@ img {
   .footer__wrap {
     background-image: none; }
   .footer {
-    background-color: #181818; } }
+    background-color: #181818; }
+  .our-clients {
+    display: none; }
+  .design-project {
+    padding-bottom: 15rem; } }
 
 @media screen and (max-width: 992px) {
   .hero {
@@ -1236,7 +1240,7 @@ img {
   .footer {
     padding-top: 0;
     background-image: none;
-    background-color: #181818; }
+    background-color: #131313; }
     .footer__wrap {
       margin-bottom: 0;
       margin-top: 0; }
