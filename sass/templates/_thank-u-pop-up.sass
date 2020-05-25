@@ -1,6 +1,6 @@
 .t-modal
-    opacity: 0
-    visibility: hidden
+    opacity: 1
+    // visibility: hidden
     position: fixed
     z-index: 200
     left: 0
@@ -13,6 +13,18 @@
     display: flex
     justify-content: center
     align-items: center
+    &__content
+        display: flex
+        align-items: center
+        justify-content: center
+    &__please
+        font-size: 1.3rem
+        color: $primary
+        font-family: 'Futura Book'
+        margin-right: 1rem
+    &__vk
+        width: 2.5rem
+        height: 2.5rem
     &--visible
         opacity: 1
         visibility: visible

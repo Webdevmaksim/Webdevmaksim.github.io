@@ -1105,8 +1105,7 @@ img {
   color: #E3B873; }
 
 .t-modal {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
   position: fixed;
   z-index: 200;
   left: 0;
@@ -1119,6 +1118,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .t-modal__content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .t-modal__please {
+    font-size: 1.3rem;
+    color: #E3B873;
+    font-family: 'Futura Book';
+    margin-right: 1rem; }
+  .t-modal__vk {
+    width: 2.5rem;
+    height: 2.5rem; }
   .t-modal--visible {
     opacity: 1;
     visibility: visible; }
