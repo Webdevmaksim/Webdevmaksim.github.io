@@ -32,15 +32,52 @@
 // JQuery Модальное окно
 $(document).ready(function () {
     var modal = $('.modal'),
-        modalBtn = $('[data-toggle="modal"]'),
-        closeBtn = $('.modal__close');
-        modalD = $('.modal--visible');
+        modalBtn = $('[data-toggle=modal]'),
+        closeBtn = $('.modal__close'),
+        //Доп переменные
+        //Модальное окно благодарности
+        tModal = $('.t-modal'),
+        TcloseBtn = $('.t-modal__close');
 
+        TcloseBtn.on('click', function(){
+          tModal.removeClass('t-modal--visible');
+      });
+
+      $(document).keydown(function(event) { 
+        if (event.keyCode == 27) { 
+        $('.t-modal').removeClass('t-modal--visible');
+        }
+        });
+        //Закрытие на клик за пределами поля!!!
+        $('.t-modal').click(function(e) {
+          if ($(e.target).closest('.t-modal__dialog').length == 0){
+            $(this).removeClass('t-modal--visible');					
+          }
+        });
+        // основное модальное окно 
     modalBtn.on('click', function(){
        modal.toggleClass('modal--visible');
     });
-
+  
     
+    
+    //закрытие на клавишу esc!!!
+    $(document).keydown(function(event) { 
+      if (event.keyCode == 27) { 
+        $('.modal').removeClass('modal--visible');
+      }
+    });
+
+    //Закрытие на клик за пределами поля!!!
+    $('.modal').click(function(e) {
+      //Вариант один
+      // if ($(e.target).closest('.modal__dialog').length == 0)
+      //Вариант два
+      if (e.target == modal[0]){
+        $(this).removeClass('modal--visible');					
+      }
+    });
+
     closeBtn.on('click', function(){
         modal.toggleClass('modal--visible');
     });
@@ -127,7 +164,8 @@ $(document).ready(function () {
               url: "./php/send.php",
               data: $(form).serialize(),
               success: function (response) {
-                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                tModal.toggleClass('t-modal--visible');
                 $(form)[0].reset();
                 modal.removeClass('modal--visible');
               },
@@ -177,7 +215,8 @@ $(document).ready(function () {
               url: "./php/question.php",
               data: $(form).serialize(),
               success: function (response) {
-                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                tModal.toggleClass('t-modal--visible');
                 $(form)[0].reset();
               },
               error: function(response){
@@ -217,7 +256,8 @@ $(document).ready(function () {
               url: "./php/control.php",
               data: $(form).serialize(),
               success: function (response) {
-                confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
+                tModal.toggleClass('t-modal--visible'); 
                 $(form)[0].reset();
               },
               error: function(response){
@@ -264,6 +304,25 @@ $(document).ready(function () {
             myMap.geoObjects
                 .add(myPlacemark);
         });
+
+
+        //Кнопка прокрутки наверх
+        $(window).scroll(function () {
+          // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+          if ($(this).scrollTop() > 50) {
+              $('.button-up').fadeIn();
+          } else {
+              $('.button-up').fadeOut();
+          }
+      });
+      
+      /** При нажатии на кнопку мы перемещаемся к началу страницы */
+      $('.button-up').click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          }, 500);
+          return false;
+      });
 });
 
 
