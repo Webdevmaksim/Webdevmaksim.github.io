@@ -438,7 +438,8 @@ div#modalCheckbox-error {
   box-sizing: border-box; }
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Futura Book', sans-serif;
@@ -542,7 +543,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   padding-top: 100px;
-  background: #131313 url("../img/hero/main-bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/hero/main-bg.webp") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
   .hero::after {
@@ -1085,6 +1086,7 @@ img {
   margin: 0 auto 4.71rem; }
 
 .button-up {
+  z-index: 200;
   right: 0;
   margin: 0;
   position: fixed;
@@ -1105,7 +1107,8 @@ img {
   color: #E3B873; }
 
 .t-modal {
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 200;
   left: 0;
