@@ -130,21 +130,22 @@
         //         min-width: 300px
         &-slide
             &--right
-                // min-width: 320px
-                min-height: 30.28rem
+                max-height: 30.28rem
                 margin-top: 40px
-                // margin-left: 2rem
+                
             &__text
                 font-size: 14px
                 flex-basis: 40%
     .swiper-container--right
         top: 0
         right: 0
+        & img
+            max-height: 25rem
     .section-title__text
         font-size: 14px
     .swiper-slide--right
         // min-width: 300px
-        height: 202px
+        // height: 202px
     
     // Control
     .control
@@ -188,6 +189,8 @@
             margin-top: 0
     .our-clients
         display: none
+    //map
+        
             
 
 
@@ -241,7 +244,12 @@
     .swiper
         &-container
             &--right
-                margin-top: 30px
+                margin-top: 30px    
+                height: auto
+                & img   
+                    height: auto
+                    max-height: 14rem
+    
         &-slide
             &--left
                 margin-bottom: 40px
@@ -321,7 +329,7 @@
     //modal
     .modal
         &__dialog
-            padding: 1.5rem
+            padding: 1rem
             max-width: 26.85rem
         &__title
             font-size: 1.2rem   
@@ -338,8 +346,6 @@
     .contacts-map-wrapper
         display: flex
         flex-direction: column-reverse
-    .footer__map
-        width: 100%
     .contacts
         &__phone
             color: $primary
@@ -349,9 +355,32 @@
             margin: auto
     .contacts
         &__phone-footer
-            font-size: 1.28rem
+            font-size: 1.5rem
             margin-left: -1.1rem
-            max-width: 22rem
+    .map__container
+        max-height: 21rem
+    .footer__map
+        max-height: 21rem 
+    .contacts__email
+        & img
+            width: 3.1rem
+            height: 3.1rem  
+            margin-right: 0.8rem
+    .socials__insta
+        & img
+            width: 3.1rem
+            height: 3.1rem
+    .control__policy
+        margin: 0
+    .contacts__wrapper  
+        margin: 0
+    .contacts__phone-footer
+        max-width: 29rem
+        line-height: 1.4
+    .footer__wrap
+        padding: 0
+        margin-bottom: 3.28rem
+        
         
    
 

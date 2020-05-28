@@ -457,9 +457,11 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-weight: 400; }
     .section-title__heading {
-      line-height: 138.6%; }
+      line-height: 138.6%;
+      font-weight: 400; }
     .section-title__word {
       display: flex;
       align-items: center; }
@@ -584,6 +586,7 @@ img {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     z-index: 3; }
     .hero__scroll-down::after {
       content: '';
@@ -642,7 +645,9 @@ img {
   font-family: 'Yeseva One', cursive;
   margin-bottom: 2.214rem;
   margin-top: -30rem;
-  font-weight: light; }
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-style: normal; }
 
 .control__video {
   position: relative;
@@ -652,7 +657,7 @@ img {
   align-items: center;
   max-width: 58.357rem;
   min-height: 31rem;
-  background: #131313 url("../img/video/video-bg.jpg") center no-repeat;
+  background: #131313 url("../img/video/video-bg.webp") center no-repeat;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
   .control__video::before {
     content: '';
@@ -702,9 +707,11 @@ img {
     color: #131313; }
 
 .control__policy {
+  flex-basis: 100%;
+  font-size: 1.15rem;
   margin-top: 1rem;
   position: relative;
-  margin: 0 auto; }
+  margin-left: -30px; }
 
 .control__button {
   padding: 1.28rem 4.30rem;
@@ -767,10 +774,14 @@ img {
   padding: 1.214rem 2.6rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+
+.design-project__tag {
+  padding: 1.21rem  5.21rem  1.21rem 2.35rem; }
 
 .card__item {
   list-style: none; }
@@ -826,7 +837,8 @@ img {
     max-width: 25.85rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 2.428rem;
+    font-weight: 400; }
   .modal__form {
     display: flex;
     flex-direction: column; }
@@ -868,6 +880,7 @@ img {
     font-size: 1.285rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0.54rem; }
 
@@ -914,6 +927,8 @@ img {
 .swiper-container--right {
   top: 20px;
   right: 20px; }
+  .swiper-container--right img {
+    max-width: 70rem; }
 
 .our-clients {
   padding-bottom: 30rem; }
@@ -1011,7 +1026,7 @@ img {
     text-transform: uppercase;
     margin: auto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1.428rem;
     text-align: center;
     margin-bottom: 3.214rem; }
@@ -1076,14 +1091,83 @@ img {
 
 .contacts-map-wrapper {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .footer__map {
+  position: relative;
+  z-index: 7;
+  background-color: transparent;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  margin: 0 auto 4.71rem;
+  height: 33.21rem; }
+
+.map__container {
+  position: relative;
+  cursor: pointer;
+  background: url("../img/map/map.webp") no-repeat center;
+  background-size: cover;
+  margin-bottom: 4.71rem;
   height: 33.21rem;
-  width: 66.07rem;
-  margin: 0 auto 4.71rem; }
+  width: 100%;
+  max-width: 100%;
+  max-height: 33.21rem; }
+
+.map__loader {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55); }
+  .map__loader::after, .map__loader ::before {
+    box-sizing: border-box; }
+  .map__loader::after {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    content: '';
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    border: solid 8px #ffffff;
+    border-left-color: transparent;
+    border-radius: 50%; }
+
+.map__loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
 
 .button-up {
   z-index: 200;
@@ -1264,7 +1348,7 @@ img {
   .col-60 {
     min-width: 100%; }
   .swiper-slide--right {
-    min-height: 30.28rem;
+    max-height: 30.28rem;
     margin-top: 40px; }
   .swiper-slide__text {
     font-size: 14px;
@@ -1272,10 +1356,10 @@ img {
   .swiper-container--right {
     top: 0;
     right: 0; }
+    .swiper-container--right img {
+      max-height: 25rem; }
   .section-title__text {
     font-size: 14px; }
-  .swiper-slide--right {
-    height: 202px; }
   .control {
     position: relative;
     background-color: #131313;
@@ -1366,7 +1450,11 @@ img {
     text-transform: none;
     margin-bottom: 40px; }
   .swiper-container--right {
-    margin-top: 30px; }
+    margin-top: 30px;
+    height: auto; }
+    .swiper-container--right img {
+      height: auto;
+      max-height: 14rem; }
   .swiper-slide--left {
     margin-bottom: 40px; }
   .swiper-slide__heading {
@@ -1439,7 +1527,7 @@ img {
     .footer__button {
       font-size: 1.3rem; }
   .modal__dialog {
-    padding: 1.5rem;
+    padding: 1rem;
     max-width: 26.85rem; }
   .modal__title {
     font-size: 1.2rem;
@@ -1453,8 +1541,6 @@ img {
   .contacts-map-wrapper {
     display: flex;
     flex-direction: column-reverse; }
-  .footer__map {
-    width: 100%; }
   .contacts__phone {
     color: #E3B873;
     font-size: 14px;
@@ -1462,9 +1548,29 @@ img {
   .contacts__socials {
     margin: auto; }
   .contacts__phone-footer {
-    font-size: 1.28rem;
-    margin-left: -1.1rem;
-    max-width: 22rem; } }
+    font-size: 1.5rem;
+    margin-left: -1.1rem; }
+  .map__container {
+    max-height: 21rem; }
+  .footer__map {
+    max-height: 21rem; }
+  .contacts__email img {
+    width: 3.1rem;
+    height: 3.1rem;
+    margin-right: 0.8rem; }
+  .socials__insta img {
+    width: 3.1rem;
+    height: 3.1rem; }
+  .control__policy {
+    margin: 0; }
+  .contacts__wrapper {
+    margin: 0; }
+  .contacts__phone-footer {
+    max-width: 29rem;
+    line-height: 1.4; }
+  .footer__wrap {
+    padding: 0;
+    margin-bottom: 3.28rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

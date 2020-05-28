@@ -4,11 +4,12 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const sass  = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-
+const minify = require('gulp-minify');
 
 // Static server
 function bs() {
     minсss();
+    compress();
     serveSass();
     browserSync.init({
         server: {
@@ -21,6 +22,11 @@ function bs() {
     watch("./sass/**/*.sass", serveSass);
     watch("./sass/**/*.scss", serveSass);
     watch("./php/*.php").on('change', browserSync.reload);
+};
+function compress(){
+    return src(['./js/*.js', '!./js/*.min.js'])
+    .pipe(minify())
+    .pipe(dest('js'));
 };
 
 
@@ -43,6 +49,7 @@ function serveSass() {
         .pipe(sass())
         .pipe(autoprefixer({
             cascade: false
+            // overrideBrowsersList: ['last 20 versions']
         }))
         .pipe(dest("./css"))
         .pipe(browserSync.stream());
