@@ -6,11 +6,12 @@
     <title>Repair Design</title>
     <link rel="icon" href="./img/main-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> -->
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
+    <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64441363, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64441363" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <header class="header">
         <div class="container">
             <div class="menu">
@@ -32,7 +33,7 @@
 
                     <a href="tel:+7(999)7683299" class="phone contacts__phone">+7 (999) 768-32-99</a> 
 
-                    <button class="button contacts__button button--primary" data-toggle="modal">
+                    <button onclick="ym('64441363', 'reachGoal', 'Button'); return true;" class="button contacts__button button--primary" data-toggle="modal">
                         заказать звонок
                     </button>
 
@@ -263,7 +264,8 @@
                     <!-- /.section-title__image -->
                 </div>
                 <!-- /.section-title -->
-                <div class="control__video video">
+                <div class="control__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script>
                     <img loading="lazy" src="./img/video/play.svg" alt="кнопка-воспроизведения" class="video__play">
                 </div>
                 <p class="control__text">
@@ -745,11 +747,11 @@
         <!-- /.t-modal__dialog -->
     </div>
     <!-- /.t-modal -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> 
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script> 
     <script src="./js/wow.min.js"></script>  
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 </html>

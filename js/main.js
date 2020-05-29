@@ -134,6 +134,7 @@ $(document).ready(function () {
               url: "./php/send.php",
               data: $(form).serialize(),
               success: function (response) {
+                onclick="ym('64441363', 'reachGoal', 'Form-send'); return true;";
                 // confirm('Форма отправлена, мы свяжемся с вами в ближайшее время.');
                 tModal.toggleClass('t-modal--visible');
                 $(form)[0].reset();
@@ -278,7 +279,7 @@ function init () {
   //Решение по callback-у для определния полной загрузки карты: http://ru.stackoverflow.com/questions/463638/callback-загрузки-карты-yandex-map
   waitForTilesLoad(layer).then(function() {
     //Скрываем
-    spinner.removeClass('is-active');
+    spinner.removeClass('is-active', 'map__loader--default');
   });
 }
 
@@ -376,6 +377,26 @@ $(function() {
           }, 500);
           return false;
       });
+
+
+      //Видео по клику
+
+
+      var player;
+
+      $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          width: '100%',
+          videoId: '_YfS8rilkO4',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      });
+
+      function videoPlay(){
+        player.videoPlay();
+      }
 });
 
 

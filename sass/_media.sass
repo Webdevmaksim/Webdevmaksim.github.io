@@ -1,3 +1,7 @@
+@media screen and ( max-width: 1500px )
+    .card
+        margin-right: 3rem
+    
 @media screen and ( max-width: 1300px )
     html
         font-size: 12px
@@ -7,6 +11,8 @@
         &__item
             margin-right: 1rem
 @media screen and ( max-width: 1080px )
+    .card
+        margin: 0
     .row
         flex-direction: column
         align-items: center 
@@ -190,6 +196,13 @@
     .our-clients
         display: none
     //map
+    .footer
+        padding-bottom: 2.7rem
+        &__menu
+            display: none
+    .contacts
+        &__phone
+            color: $light
         
             
 
@@ -310,8 +323,6 @@
         &__title
             font-size: 1.65rem
             margin-bottom: 4.7rem
-        &__form
-            margin-left: -1rem
         &__label
             font-size: 1.3rem
         &__input
@@ -348,15 +359,13 @@
         flex-direction: column-reverse
     .contacts
         &__phone
-            color: $primary
+            color: $light
             font-size: 14px
             line-height: 138.6% 
         &__socials   
             margin: auto
-    .contacts
-        &__phone-footer
-            font-size: 1.5rem
-            margin-left: -1.1rem
+
+            
     .map__container
         max-height: 21rem
     .footer__map
@@ -375,6 +384,7 @@
     .contacts__wrapper  
         margin: 0
     .contacts__phone-footer
+        font-size: 1.36rem  
         max-width: 29rem
         line-height: 1.4
     .footer__wrap
@@ -395,11 +405,23 @@
             max-height: 85vh
             overflow: scroll
     .hero
-        margin-top: 5rem
+        margin-top: 3rem
         padding-top: 0px
         padding-bottom: 3rem
         min-height: 36rem
-    
+@media screen and ( max-height: 322px )
+    .title--primary
+        font-size: 1.2rem
+    .hero
+        margin-top: 1rem
+        &__button
+            padding: 10px 15px
+        &__title
+            font-size: 1.2rem
+            width: 16rem
+        &__text
+            font-size: 1.2rem
+            margin-bottom: 1rem
         
             
     

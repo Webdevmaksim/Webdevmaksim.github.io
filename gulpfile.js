@@ -5,11 +5,13 @@ const rename = require('gulp-rename');
 const sass  = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
+const htmlmin = require('gulp-htmlmin');
 
 // Static server
 function bs() {
     minсss();
     compress();
+    minify_h();
     serveSass();
     browserSync.init({
         server: {
@@ -25,8 +27,22 @@ function bs() {
 };
 function compress(){
     return src(['./js/*.js', '!./js/*.min.js'])
-    .pipe(minify())
+    .pipe(minify({
+        ext:{
+            min: '.min.js'
+        },
+        ignoreFiles: ['-min.js']
+    }))
     .pipe(dest('js'));
+};
+
+function minify_h () {
+    return src(['./*.html', '!./*.min.html'])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename({
+        suffix: '.min'
+    }))
+    .pipe(dest('./'));
 };
 
 

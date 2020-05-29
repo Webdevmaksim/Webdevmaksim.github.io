@@ -70,8 +70,6 @@
         text-decoration: none
     &__email
         margin-right: 1.15rem
-    &__socials
-        margin-left: -3.3rem
 .contacts-map-wrapper
     display: flex
     flex-direction: column
@@ -97,12 +95,13 @@
     margin-bottom: 4.71rem  
     height: 33.21rem
     width: 100%
-    max-width: 100%
+    max-width: 66rem
     max-height: 33.21rem
 
 
 .map__loader  
     position: absolute
+    display: none
     z-index: 15
     top: 0
     left: 0
@@ -126,6 +125,8 @@
         border: solid 8px #ffffff
         border-left-color: transparent
         border-radius: 50%
+ 
+
 
 .map__loader.is-active  
     top: 0
